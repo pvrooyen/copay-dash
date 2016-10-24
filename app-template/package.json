@@ -6,14 +6,14 @@
   "version": "*VERSION*",
   "keywords": [
     "wallet",
-    "copay",
+    "copay-dash",
     "multisignature",
-    "bitcoin",
-    "bitcore"
+    "dash",
+    "bitcore-dash"
   ],
   "main": "public/index.html",
   "window": {
-    "title": "Copay - A multisignature bitcoin wallet",
+    "title": "Copay-dash - A multisignature dash wallet",
     "icon": "./public/img/icons/icon-256.png",
     "toolbar": false,
     "show": true,
@@ -32,17 +32,17 @@
   },
   "dom_storage_quota": 200,
   "id": "jid1-x7bV5evAaI1P9Q",
-  "homepage": "https://github.com/bitpay/copay",
+  "homepage": "https://github.com/dashpay/copay-dash",
   "license": "MIT",
   "repository": {
-    "url": "git://github.com/bitpay/copay.git",
+    "url": "git://github.com/dashpay/copay-dash.git",
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/bitpay/copay/issues"
+    "url": "https://github.com/dashpay/copay-dash/issues"
   },
   "dependencies": {
-    "bitcore-wallet-client": "2.11.0",
+    "bitcore-wallet-client-dash": "2.11.1",
     "coveralls": "^2.11.9",
     "express": "^4.11.2",
     "fs": "0.0.2",

@@ -1,10 +1,10 @@
 {
-  "name": "copay",
+  "name": "copay-dash",
   "keywords": [
-    "copay",
+    "copay-dash",
     "wallet",
     "multisignature",
-    "bitcore"
+    "bitcore-dash"
   ],
   "dependencies": {
     "angular-mocks": "1.4.10",

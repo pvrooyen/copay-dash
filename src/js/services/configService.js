@@ -12,7 +12,7 @@ angular.module('copayApp.services').factory('configService', function(storageSer
 
     // Bitcore wallet service URL
     bws: {
-      url: 'https://bws.bitpay.com/bws/api',
+      url: 'https://bws.dev.dash.org:3232/bws/api',
     },
 
     // wallet default config
@@ -44,11 +44,11 @@ angular.module('copayApp.services').factory('configService', function(storageSer
     },
 
     rates: {
-      url: 'https://insight.bitpay.com:443/api/rates',
+      url: 'https://insight.dev.dash.org:443/api/rates',
     },
 
     release: {
-      url: 'https://api.github.com/repos/bitpay/copay/releases/latest'
+      url: 'https://api.github.com/repos/dashpay/copay-dash/releases/latest'
     },
 
     pushNotifications: {
