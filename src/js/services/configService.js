@@ -44,7 +44,7 @@ angular.module('copayApp.services').factory('configService', function(storageSer
     },
 
     rates: {
-      url: 'https://insight.dev.dash.org:443/api/rates',
+      url: 'https://bitpay.com:443/api/rates',
     },
 
     release: {
