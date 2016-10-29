@@ -34,12 +34,12 @@ angular.module('copayApp.services').factory('configService', function(storageSer
 
     // External services
     glidera: {
-      enabled: true,
+      enabled: false,
       testnet: false
     },
 
     coinbase: {
-      enabled: true,
+      enabled: false,
       testnet: false
     },
 
