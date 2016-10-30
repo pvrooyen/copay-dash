@@ -23,8 +23,8 @@ msgid "(Trusted)"
 msgstr "(Trusted)"
 
 #: src/js/controllers/walletHome.js
-msgid "{{fee}} will be deducted for bitcoin networking fees"
-msgstr "{{fee}} will be deducted for bitcoin networking fees"
+msgid "{{fee}} will be deducted for dash networking fees"
+msgstr "{{fee}} will be deducted for dash networking fees"
 
 #: public/views/copayers.html
 #: public/views/walletHome.html
@@ -44,8 +44,8 @@ msgid "* A payment proposal can be deleted if 1) you are the creator, and no oth
 msgstr "* Een betalingsvoorstel kan worden verwijderd als 1) u de aanmaker bent, en geen andere medebetaler heeft ondertekend, of 2) 24 uur zijn verstreken sinds het voorstel werd aangemaakt."
 
 #: public/views/disclaimer.html
-msgid "<b>IF YOU LOSE ACCESS TO YOUR COPAY WALLET OR YOUR ENCRYPTED PRIVATE KEYS AND YOU HAVE NOT SEPARATELY STORED A BACKUP OF YOUR WALLET AND CORRESPONDING PASSWORD, YOU ACKNOWLEDGE AND AGREE THAT ANY BITCOIN YOU HAVE ASSOCIATED WITH THAT COPAY WALLET WILL BECOME INACCESSIBLE.</b>"
-msgstr "<b>IF YOU LOSE ACCESS TO YOUR COPAY WALLET OR YOUR ENCRYPTED PRIVATE KEYS AND YOU HAVE NOT SEPARATELY STORED A BACKUP OF YOUR WALLET AND CORRESPONDING PASSWORD, YOU ACKNOWLEDGE AND AGREE THAT ANY BITCOIN YOU HAVE ASSOCIATED WITH THAT COPAY WALLET WILL BECOME INACCESSIBLE.</b>"
+msgid "<b>IF YOU LOSE ACCESS TO YOUR COPAY-DASH WALLET OR YOUR ENCRYPTED PRIVATE KEYS AND YOU HAVE NOT SEPARATELY STORED A BACKUP OF YOUR WALLET AND CORRESPONDING PASSWORD, YOU ACKNOWLEDGE AND AGREE THAT ANY DASH YOU HAVE ASSOCIATED WITH THAT COPAY-DASH WALLET WILL BECOME INACCESSIBLE.</b>"
+msgstr "<b>IF YOU LOSE ACCESS TO YOUR COPAY-DASH WALLET OR YOUR ENCRYPTED PRIVATE KEYS AND YOU HAVE NOT SEPARATELY STORED A BACKUP OF YOUR WALLET AND CORRESPONDING PASSWORD, YOU ACKNOWLEDGE AND AGREE THAT ANY DASH YOU HAVE ASSOCIATED WITH THAT COPAY-DASH WALLET WILL BECOME INACCESSIBLE.</b>"
 
 #: public/views/backup.html
 msgid "<b>OR</b> 1 wallet export file and the remaining quorum of wallet seeds (e.g. in a 3-5 wallet: 1 wallet export file + 2 wallet seeds of any of the other copayers)."
@@ -60,12 +60,12 @@ msgid "<b>OR</b> the wallet seeds of <b>all</b> copayers in the wallet"
 msgstr "<b>OR</b> the wallet seeds of <b>all</b> copayers in the wallet"
 
 #: public/views/splash.html
-msgid "A multisignature bitcoin wallet"
-msgstr "A multisignature bitcoin wallet"
+msgid "A multisignature dash wallet"
+msgstr "A multisignature dash wallet"
 
 #: public/views/preferences.html
-msgid "About Copay"
-msgstr "About Copay"
+msgid "About Copay-Dash"
+msgstr "About Copay-Dash"
 
 #: public/views/modals/txp-details.html
 #: src/js/services/confirmDialog.js
@@ -201,20 +201,20 @@ msgid "Before receiving funds, it is highly recommended you backup your wallet k
 msgstr "Before receiving funds, it is highly recommended you backup your wallet keys."
 
 #: public/views/walletHome.html
-msgid "Bitcoin address"
-msgstr "Bitcoin address"
+msgid "Dash address"
+msgstr "Dash address"
 
 #: public/views/preferences.html
-msgid "Bitcoin Network Fee Policy"
-msgstr "Bitcoin Network Fee Policy"
+msgid "Dash Network Fee Policy"
+msgstr "Dash Network Fee Policy"
 
 #: public/views/preferencesFee.html
-msgid "Bitcoin transactions may include a fee collected by miners on the network. The higher the fee, the greater the incentive a miner has to include that transaction in a block. Actual fees are determined based on network load and the selected policy."
-msgstr "Bitcoin transactions may include a fee collected by miners on the network. The higher the fee, the greater the incentive a miner has to include that transaction in a block. Actual fees are determined based on network load and the selected policy."
+msgid "Dash transactions may include a fee collected by miners on the network. The higher the fee, the greater the incentive a miner has to include that transaction in a block. Actual fees are determined based on network load and the selected policy."
+msgstr "Dash transactions may include a fee collected by miners on the network. The higher the fee, the greater the incentive a miner has to include that transaction in a block. Actual fees are determined based on network load and the selected policy."
 
 #: public/views/paymentUri.html
-msgid "Bitcoin URI is NOT valid!"
-msgstr "Bitcoin URI is NOT valid!"
+msgid "Dash URI is NOT valid!"
+msgstr "Dash URI is NOT valid!"
 
 #: public/views/modals/txp-details.html
 msgid "Broadcast Payment"
@@ -402,8 +402,8 @@ msgid "Could not join wallet"
 msgstr "Could not join wallet"
 
 #: src/js/controllers/walletHome.js
-msgid "Could not recognize a valid Bitcoin QR Code"
-msgstr "Could not recognize a valid Bitcoin QR Code"
+msgid "Could not recognize a valid Dash QR Code"
+msgstr "Could not recognize a valid Dash QR Code"
 
 #: src/js/controllers/walletHome.js
 msgid "Could not reject payment"
@@ -876,8 +876,8 @@ msgid "Multisignature wallet"
 msgstr "Multisignature wallet"
 
 #: public/views/walletHome.html
-msgid "My Bitcoin address"
-msgstr "My Bitcoin address"
+msgid "My Dash address"
+msgstr "My Dash address"
 
 #: public/views/paymentUri.html
 msgid "Network"
@@ -1399,8 +1399,8 @@ msgid "Testnet"
 msgstr "Testnet"
 
 #: public/views/disclaimer.html
-msgid "The authors of the software, employees and affiliates of Bitpay, copyright holders, and BitPay, Inc. cannot retrieve your private keys or passwords if you lose or forget them and cannot guarantee transaction confirmation as they do not have control over the Bitcoin network."
-msgstr "The authors of the software, employees and affiliates of Bitpay, copyright holders, and BitPay, Inc. cannot retrieve your private keys or passwords if you lose or forget them and cannot guarantee transaction confirmation as they do not have control over the Bitcoin network."
+msgid "The authors of the software, employees and affiliates of Bitpay, copyright holders, and BitPay, Inc. cannot retrieve your private keys or passwords if you lose or forget them and cannot guarantee transaction confirmation as they do not have control over the Dash network."
+msgstr "The authors of the software, employees and affiliates of Bitpay, copyright holders, and BitPay, Inc. cannot retrieve your private keys or passwords if you lose or forget them and cannot guarantee transaction confirmation as they do not have control over the Dash network."
 
 #: src/js/services/ledger.js
 msgid "The Ledger Chrome application is not installed"
@@ -1432,8 +1432,8 @@ msgid "The seed could require a passphrase to be imported"
 msgstr "The seed could require a passphrase to be imported"
 
 #: public/views/disclaimer.html
-msgid "The software does not constitute an account where BitPay or other third parties serve as financial intermediaries or custodians of your bitcoin."
-msgstr "The software does not constitute an account where BitPay or other third parties serve as financial intermediaries or custodians of your bitcoin."
+msgid "The software does not constitute an account where BitPay or other third parties serve as financial intermediaries or custodians of your dash."
+msgstr "The software does not constitute an account where BitPay or other third parties serve as financial intermediaries or custodians of your dash."
 
 #: public/views/disclaimer.html
 msgid "The software you are about to use functions as a free, open source, and multi-signature digital wallet."
@@ -1593,8 +1593,8 @@ msgid "Wallet Already Imported:"
 msgstr "Wallet Already Imported:"
 
 #: src/js/services/profileService.js
-msgid "Wallet already in Copay:"
-msgstr "Wallet already in Copay:"
+msgid "Wallet already in Copay-Dash:"
+msgstr "Wallet already in Copay-Dash:"
 
 #: public/views/preferencesInformation.html
 msgid "Wallet Configuration (m-n)"
@@ -1717,8 +1717,8 @@ msgid "We reserve the right to modify this disclaimer from time to time."
 msgstr "We reserve the right to modify this disclaimer from time to time."
 
 #: public/views/splash.html
-msgid "WELCOME TO COPAY"
-msgstr "WELCOME TO COPAY"
+msgid "WELCOME TO COPAY-DASH"
+msgstr "WELCOME TO COPAY-DASH"
 
 #: public/views/disclaimer.html
 msgid "While the software has undergone beta testing and continues to be improved by feedback from the open-source user and developer community, we cannot guarantee that there will be no bugs in the software."

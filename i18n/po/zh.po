@@ -28,7 +28,7 @@ msgid "[Balance Hidden]"
 msgstr "[隐藏余额]"
 
 #: src/js/controllers/walletHome.js
-msgid "{{fee}} will be deducted for bitcoin networking fees"
+msgid "{{fee}} will be deducted for dash networking fees"
 msgstr "扣除比特币网络费 {{fee}}"
 
 #: public/views/includes/confirm-tx.html
@@ -57,7 +57,7 @@ msgid "* A payment proposal can be deleted if 1) you are the creator, and no oth
 msgstr "* 如果 1) 你是创造者，及没有其他 copayer 签名，或 2) 24 小时已经过去，支付提议将被删除。"
 
 #: public/views/includes/terms.html
-msgid "<b>IF YOU LOSE ACCESS TO YOUR COPAY WALLET OR YOUR ENCRYPTED PRIVATE KEYS AND YOU HAVE NOT SEPARATELY STORED A BACKUP OF YOUR WALLET AND CORRESPONDING PASSWORD, YOU ACKNOWLEDGE AND AGREE THAT ANY BITCOIN YOU HAVE ASSOCIATED WITH THAT COPAY WALLET WILL BECOME INACCESSIBLE.</b>"
+msgid "<b>IF YOU LOSE ACCESS TO YOUR COPAY-DASH WALLET OR YOUR ENCRYPTED PRIVATE KEYS AND YOU HAVE NOT SEPARATELY STORED A BACKUP OF YOUR WALLET AND CORRESPONDING PASSWORD, YOU ACKNOWLEDGE AND AGREE THAT ANY DASH YOU HAVE ASSOCIATED WITH THAT COPAY-DASH WALLET WILL BECOME INACCESSIBLE.</b>"
 msgstr "<b>如果你无法访问你的 COPAY 钱包或加密私钥，及你没有分开储存钱包备份和相应密码，你承认并同意有关 COPAY 钱包里的任何比特币将不可被存取。</b>"
 
 #: public/views/backup.html
@@ -73,11 +73,11 @@ msgid "<b>OR</b> the wallet recovery phrases of <b>all</b> copayers in the walle
 msgstr "<b>或</b> 钱包里的 <b>所有</b> copayers 的钱包恢复短语"
 
 #: public/views/disclaimer.html
-msgid "A multisignature bitcoin wallet"
+msgid "A multisignature dash wallet"
 msgstr "多重签名比特币钱包"
 
 #: public/views/preferencesGlobal.html
-msgid "About Copay"
+msgid "About Copay-Dash"
 msgstr "Copay 简介"
 
 #: public/views/modals/txp-details.html
@@ -244,19 +244,19 @@ msgid "BIP32 path for address derivation"
 msgstr "BIP32 路径的地址衍生"
 
 #: public/views/walletHome.html
-msgid "Bitcoin address"
+msgid "Dash address"
 msgstr "比特币地址"
 
 #: public/views/preferencesGlobal.html
-msgid "Bitcoin Network Fee Policy"
+msgid "Dash Network Fee Policy"
 msgstr "比特币网络手续费策略"
 
 #: public/views/preferencesFee.html
-msgid "Bitcoin transactions may include a fee collected by miners on the network. The higher the fee, the greater the incentive a miner has to include that transaction in a block. Current fees are determined based on network load and the selected policy."
+msgid "Dash transactions may include a fee collected by miners on the network. The higher the fee, the greater the incentive a miner has to include that transaction in a block. Current fees are determined based on network load and the selected policy."
 msgstr "比特币交易可能包括网络矿工所收取的费用。收费越高，交易数据块包含矿工的奖励也越大。当前收费的确定取决于网络负载和所选定的策略。"
 
 #: public/views/paymentUri.html
-msgid "Bitcoin URI is NOT valid!"
+msgid "Dash URI is NOT valid!"
 msgstr "比特币 URI 无效！"
 
 #: public/views/modals/txp-details.html
@@ -487,7 +487,7 @@ msgid "Could not join wallet"
 msgstr "无法加入钱包"
 
 #: src/js/controllers/walletHome.js
-msgid "Could not recognize a valid Bitcoin QR Code"
+msgid "Could not recognize a valid Dash QR Code"
 msgstr "无法识别有效的比特币 QR 代码"
 
 #: src/js/controllers/modals/txpDetails.js
@@ -1012,7 +1012,7 @@ msgid "Multiple recipients"
 msgstr "多个接收者"
 
 #: public/views/walletHome.html
-msgid "My Bitcoin address"
+msgid "My Dash address"
 msgstr "我的比特币地址"
 
 #: public/views/modals/addressbook.html
@@ -1467,7 +1467,7 @@ msgid "Send addresses by email"
 msgstr "通过电邮发送地址"
 
 #: public/views/includes/confirm-tx.html
-msgid "Send bitcoin"
+msgid "Send dash"
 msgstr "发送比特币"
 
 #: public/views/export.html
@@ -1633,7 +1633,7 @@ msgid "Terms of Use"
 msgstr "使用条款"
 
 #: public/views/includes/terms.html
-msgid "The authors of the software, employees and affiliates of Bitpay, copyright holders, and BitPay, Inc. cannot retrieve your private keys or passwords if you lose or forget them and cannot guarantee transaction confirmation as they do not have control over the Bitcoin network."
+msgid "The authors of the software, employees and affiliates of Bitpay, copyright holders, and BitPay, Inc. cannot retrieve your private keys or passwords if you lose or forget them and cannot guarantee transaction confirmation as they do not have control over the Dash network."
 msgstr "如果你遗失或忘记私钥或密码，软件作者、Bitpay 的员工及附属公司、版权持有人或 BitPay，Inc. 均无法取回你的私钥或密码，由于他们没有比特币网络的管理权，他们并不能保证交易确认。"
 
 #: public/views/import.html
@@ -1666,7 +1666,7 @@ msgid "The request could not be understood by the server"
 msgstr "服务器不理解此请求"
 
 #: public/views/includes/terms.html
-msgid "The software does not constitute an account where BitPay or other third parties serve as financial intermediaries or custodians of your bitcoin."
+msgid "The software does not constitute an account where BitPay or other third parties serve as financial intermediaries or custodians of your dash."
 msgstr "此软件并不构成一个账户，让 BitPay 或其他第三方作为金融中介机构或保管人以保管你的比特币。"
 
 #: public/views/includes/terms.html
@@ -1695,7 +1695,7 @@ msgid "There are no wallets to make this payment"
 msgstr "没有钱包以进行此支付"
 
 #: src/js/controllers/index.js
-msgid "There is a new version of Copay. Please update"
+msgid "There is a new version of Copay-Dash. Please update"
 msgstr "Copay 有新版本。请更新"
 
 #: src/js/controllers/import.js
@@ -1840,7 +1840,7 @@ msgid "Wallet already exists"
 msgstr "钱包已存在"
 
 #: src/js/services/profileService.js
-msgid "Wallet already in Copay"
+msgid "Wallet already in Copay-Dash"
 msgstr "钱包已经在 Copay"
 
 #: public/views/preferencesInformation.html
@@ -1970,7 +1970,7 @@ msgid "We reserve the right to modify this disclaimer from time to time."
 msgstr "我们保留权利以修改此免责声明。"
 
 #: public/views/disclaimer.html
-msgid "WELCOME TO COPAY"
+msgid "WELCOME TO COPAY-DASH"
 msgstr "欢迎使用 COPAY"
 
 #: public/views/includes/terms.html

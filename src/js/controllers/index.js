@@ -63,7 +63,7 @@ angular.module('copayApp.controllers').controller('indexController', function($r
       }
 
       if (newRelease)
-        $scope.newRelease = gettext('There is a new version of Copay. Please update');
+        $scope.newRelease = gettext('There is a new version of Copay-Dash. Please update');
     });
   }
 

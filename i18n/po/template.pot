@@ -18,7 +18,7 @@ msgid "[Balance Hidden]"
 msgstr ""
 
 #: src/js/controllers/walletHome.js
-msgid "{{fee}} will be deducted for bitcoin networking fees"
+msgid "{{fee}} will be deducted for dash networking fees"
 msgstr ""
 
 #: public/views/includes/confirm-tx.html
@@ -47,7 +47,7 @@ msgid "* A payment proposal can be deleted if 1) you are the creator, and no oth
 msgstr ""
 
 #: public/views/includes/terms.html
-msgid "<b>IF YOU LOSE ACCESS TO YOUR COPAY WALLET OR YOUR ENCRYPTED PRIVATE KEYS AND YOU HAVE NOT SEPARATELY STORED A BACKUP OF YOUR WALLET AND CORRESPONDING PASSWORD, YOU ACKNOWLEDGE AND AGREE THAT ANY BITCOIN YOU HAVE ASSOCIATED WITH THAT COPAY WALLET WILL BECOME INACCESSIBLE.</b>"
+msgid "<b>IF YOU LOSE ACCESS TO YOUR COPAY-DASH WALLET OR YOUR ENCRYPTED PRIVATE KEYS AND YOU HAVE NOT SEPARATELY STORED A BACKUP OF YOUR WALLET AND CORRESPONDING PASSWORD, YOU ACKNOWLEDGE AND AGREE THAT ANY DASH YOU HAVE ASSOCIATED WITH THAT COPAY-DASH WALLET WILL BECOME INACCESSIBLE.</b>"
 msgstr ""
 
 #: public/views/backup.html
@@ -63,11 +63,11 @@ msgid "<b>OR</b> the wallet recovery phrases of <b>all</b> copayers in the walle
 msgstr ""
 
 #: public/views/disclaimer.html
-msgid "A multisignature bitcoin wallet"
+msgid "A multisignature dash wallet"
 msgstr ""
 
 #: public/views/preferencesGlobal.html
-msgid "About Copay"
+msgid "About Copay-Dash"
 msgstr ""
 
 #: public/views/modals/txp-details.html
@@ -234,19 +234,19 @@ msgid "BIP32 path for address derivation"
 msgstr ""
 
 #: public/views/walletHome.html
-msgid "Bitcoin address"
+msgid "Dash address"
 msgstr ""
 
 #: public/views/preferencesGlobal.html
-msgid "Bitcoin Network Fee Policy"
+msgid "Dash Network Fee Policy"
 msgstr ""
 
 #: public/views/preferencesFee.html
-msgid "Bitcoin transactions may include a fee collected by miners on the network. The higher the fee, the greater the incentive a miner has to include that transaction in a block. Current fees are determined based on network load and the selected policy."
+msgid "Dash transactions may include a fee collected by miners on the network. The higher the fee, the greater the incentive a miner has to include that transaction in a block. Current fees are determined based on network load and the selected policy."
 msgstr ""
 
 #: public/views/paymentUri.html
-msgid "Bitcoin URI is NOT valid!"
+msgid "Dash URI is NOT valid!"
 msgstr ""
 
 #: public/views/modals/txp-details.html
@@ -477,7 +477,7 @@ msgid "Could not join wallet"
 msgstr ""
 
 #: src/js/controllers/walletHome.js
-msgid "Could not recognize a valid Bitcoin QR Code"
+msgid "Could not recognize a valid Dash QR Code"
 msgstr ""
 
 #: src/js/controllers/modals/txpDetails.js
@@ -1002,7 +1002,7 @@ msgid "Multiple recipients"
 msgstr ""
 
 #: public/views/walletHome.html
-msgid "My Bitcoin address"
+msgid "My Dash address"
 msgstr ""
 
 #: public/views/modals/addressbook.html
@@ -1457,7 +1457,7 @@ msgid "Send addresses by email"
 msgstr ""
 
 #: public/views/includes/confirm-tx.html
-msgid "Send bitcoin"
+msgid "Send dash"
 msgstr ""
 
 #: public/views/export.html
@@ -1623,7 +1623,7 @@ msgid "Terms of Use"
 msgstr ""
 
 #: public/views/includes/terms.html
-msgid "The authors of the software, employees and affiliates of Bitpay, copyright holders, and BitPay, Inc. cannot retrieve your private keys or passwords if you lose or forget them and cannot guarantee transaction confirmation as they do not have control over the Bitcoin network."
+msgid "The authors of the software, employees and affiliates of Bitpay, copyright holders, and BitPay, Inc. cannot retrieve your private keys or passwords if you lose or forget them and cannot guarantee transaction confirmation as they do not have control over the Dash network."
 msgstr ""
 
 #: public/views/import.html
@@ -1656,7 +1656,7 @@ msgid "The request could not be understood by the server"
 msgstr ""
 
 #: public/views/includes/terms.html
-msgid "The software does not constitute an account where BitPay or other third parties serve as financial intermediaries or custodians of your bitcoin."
+msgid "The software does not constitute an account where BitPay or other third parties serve as financial intermediaries or custodians of your dash."
 msgstr ""
 
 #: public/views/includes/terms.html
@@ -1685,7 +1685,7 @@ msgid "There are no wallets to make this payment"
 msgstr ""
 
 #: src/js/controllers/index.js
-msgid "There is a new version of Copay. Please update"
+msgid "There is a new version of Copay-Dash. Please update"
 msgstr ""
 
 #: src/js/controllers/import.js
@@ -1830,7 +1830,7 @@ msgid "Wallet already exists"
 msgstr ""
 
 #: src/js/services/profileService.js
-msgid "Wallet already in Copay"
+msgid "Wallet already in Copay-Dash"
 msgstr ""
 
 #: public/views/preferencesInformation.html
@@ -1960,7 +1960,7 @@ msgid "We reserve the right to modify this disclaimer from time to time."
 msgstr ""
 
 #: public/views/disclaimer.html
-msgid "WELCOME TO COPAY"
+msgid "WELCOME TO COPAY-DASH"
 msgstr ""
 
 #: public/views/includes/terms.html

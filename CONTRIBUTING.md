@@ -86,7 +86,7 @@ provide the following information:
  - Please import your wallet on a different platform. Does the problem persist?
  - What type of wallet are you using? (multisig or singlesig)
  - When the wallet was created? On which device / operating system
- - Please check Copay logs (General Settings -> About Copay -> Session Logs). Look for 
+ - Please check Copay logs (General Settings -> About Copay-Dash -> Session Logs). Look for 
  any errors reported there (errors are shown in red)
  - If possible, please provide a screenshot of the error / issue.
  
