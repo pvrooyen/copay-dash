@@ -49,12 +49,15 @@ RateService.prototype._fetchCurrencies = function() {
   var rateServiceUrl = 'https://bitpay.com/api/rates';
   var exchangeRateUrl = 'https://dev-test.dash.org:3001/insight-api-dash/currency';
 
-  self.httprequest.get(exchangeRateUrl)
-    .success(function(body) {
+  var retrieve = function() {
 
-      var retrieve = function(btc_dash) {
-        //log.info('Fetching exchange rates');
-        self.httprequest.get(rateServiceUrl).success(function(res) {
+    //log.info('Fetching exchange rates');
+    self.httprequest.get(rateServiceUrl).success(function(res) {
+
+      self.httprequest.get(exchangeRateUrl)
+        .success(function(body) {
+          var btc_dash = parseFloat(body.data.btc_dash); // provided by DashCentral / Insight API
+
           self.lodash.each(res, function(currency) {
             self._rates[currency.code] = (currency.rate * btc_dash);
             self._alternatives.push({
@@ -68,21 +71,27 @@ RateService.prototype._fetchCurrencies = function() {
             setTimeout(callback, 1);
           });
           setTimeout(retrieve, updateFrequencySeconds * 1000);
-        }).error(function(err) {
-          //log.debug('Error fetching exchange rates', err);
+
+        })
+        .error(function(err) {
+          //log.debug('Error fetching exchange rates from BitPay', err);
           setTimeout(function() {
             backoffSeconds *= 1.5;
             retrieve();
           }, backoffSeconds * 1000);
           return;
         });
-      };
-
-      retrieve(parseFloat(body.data.btc_dash));
-    })
-    .error(function(err) {
+    }).error(function(err) {
+      //log.debug('Error fetching exchange rates from DashCentral', err);
+      setTimeout(function() {
+        backoffSeconds *= 1.5;
+        retrieve();
+      }, backoffSeconds * 1000);
       return;
     });
+  };
+
+  retrieve();
 };
 
 RateService.prototype.getRate = function(code) {
