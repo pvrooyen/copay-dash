@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.bitpay.*NAMENOSPACE*"
-  version="*VERSION*"
-  android-versionCode="*ANDROIDVERSION*"
-  ios-CFBundleVersion="*VERSION*">
-    <name>*NAMECASENOSPACE*</name>
+<widget id="com.bitpay.copay"
+  version="2.7.0"
+  android-versionCode="117"
+  ios-CFBundleVersion="2.7.0">
+    <name>Copay</name>
     <description>
       *APPDESCRIPTION*
     </description>
