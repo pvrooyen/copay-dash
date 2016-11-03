@@ -21,6 +21,8 @@ angular.module('copayApp.controllers').controller('indexController', function($r
   ret.prevState = 'walletHome';
   ret.physicalScreenWidth = ((window.innerWidth > 0) ? window.innerWidth : screen.width);
 
+  ret.appConfig = window.appConfig;
+
   // Only for testing
   //storageService.checkQuota();
 
@@ -61,7 +63,7 @@ angular.module('copayApp.controllers').controller('indexController', function($r
       }
 
       if (newRelease)
-        $scope.newRelease = gettext('There is a new version of Copay. Please update');
+        $scope.newRelease = gettext('There is a new version of Copay-Dash. Please update');
     });
   }
 

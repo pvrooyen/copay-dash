@@ -12,7 +12,7 @@ angular.module('copayApp.services').factory('configService', function(storageSer
 
     // Bitcore wallet service URL
     bws: {
-      url: 'https://bws.bitpay.com/bws/api',
+      url: 'https://dev-test.dash.org:3232/bws/api',
     },
 
     // wallet default config
@@ -23,10 +23,10 @@ angular.module('copayApp.services').factory('configService', function(storageSer
       reconnectDelay: 5000,
       idleDurationMin: 4,
       settings: {
-        unitName: 'bits',
+        unitName: 'DASH',
         unitToSatoshi: 100,
         unitDecimals: 2,
-        unitCode: 'bit',
+        unitCode: 'btc',
         alternativeName: 'US Dollar',
         alternativeIsoCode: 'USD',
       }
@@ -34,21 +34,21 @@ angular.module('copayApp.services').factory('configService', function(storageSer
 
     // External services
     glidera: {
-      enabled: true,
+      enabled: false,
       testnet: false
     },
 
     coinbase: {
-      enabled: true,
+      enabled: false,
       testnet: false
     },
 
     rates: {
-      url: 'https://insight.bitpay.com:443/api/rates',
+      url: 'https://bitpay.com:443/api/rates',
     },
 
     release: {
-      url: 'https://api.github.com/repos/bitpay/copay/releases/latest'
+      url: 'https://api.github.com/repos/dashpay/copay-dash/releases/latest'
     },
 
     pushNotifications: {

@@ -103,7 +103,7 @@ mocks.init = function(fixtures, controllerName, opts, done) {
         var bwc = new $delegate.Client();
         if (walletData)
           bwc.import(walletData, {
-            baseUrl: opts.bwsurl || 'https://bws.bitpay.com/bws/api',
+            baseUrl: opts.bwsurl || 'https://dev-test.dash.org:3232/bws/api',
             verbose: opts.verbose,
             transports: ['polling'],
           });
@@ -188,7 +188,7 @@ mocks.init = function(fixtures, controllerName, opts, done) {
       });
 
     $httpBackend.whenGET(/views.*/).respond(200, '');
-      
+
 
     _configService_.get(function() {
       function startController() {

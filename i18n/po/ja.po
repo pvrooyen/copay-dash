@@ -28,7 +28,7 @@ msgid "[Balance Hidden]"
 msgstr "[残高非表示中]"
 
 #: src/js/controllers/walletHome.js
-msgid "{{fee}} will be deducted for bitcoin networking fees"
+msgid "{{fee}} will be deducted for dash networking fees"
 msgstr "{{fee}} のビットコインネットワーク手数料が差し引かれます。"
 
 #: public/views/includes/confirm-tx.html
@@ -57,7 +57,7 @@ msgid "* A payment proposal can be deleted if 1) you are the creator, and no oth
 msgstr "* 送金の提案の取下げは①他のウォレット参加者に署名されていなかった場合、提案者に提案を取り下げることができます。②提案の起案から24時間が経っても解決しなかった場合、全員に取り下げることができます。"
 
 #: public/views/includes/terms.html
-msgid "<b>IF YOU LOSE ACCESS TO YOUR COPAY WALLET OR YOUR ENCRYPTED PRIVATE KEYS AND YOU HAVE NOT SEPARATELY STORED A BACKUP OF YOUR WALLET AND CORRESPONDING PASSWORD, YOU ACKNOWLEDGE AND AGREE THAT ANY BITCOIN YOU HAVE ASSOCIATED WITH THAT COPAY WALLET WILL BECOME INACCESSIBLE.</b>"
+msgid "<b>IF YOU LOSE ACCESS TO YOUR COPAY-DASH WALLET OR YOUR ENCRYPTED PRIVATE KEYS AND YOU HAVE NOT SEPARATELY STORED A BACKUP OF YOUR WALLET AND CORRESPONDING PASSWORD, YOU ACKNOWLEDGE AND AGREE THAT ANY BITCOIN YOU HAVE ASSOCIATED WITH THAT COPAY WALLET WILL BECOME INACCESSIBLE.</b>"
 msgstr "<b>Copayウォレットとその中にある秘密鍵の情報を紛失してしまい、尚且つバックアップが無い、若しくはそのバックアップを暗号化した際のパスワードが分からないなどの状況に陥ってしまえば、そのウォレットに含まれた全てのビットコインが永久送金不可能となってしまうことを認識し、同意するものとします。</b>"
 
 #: public/views/backup.html
@@ -73,11 +73,11 @@ msgid "<b>OR</b> the wallet recovery phrases of <b>all</b> copayers in the walle
 msgstr "<b>または</b> 参加者 <b>全員</b> のウォレット復元フレーズ"
 
 #: public/views/disclaimer.html
-msgid "A multisignature bitcoin wallet"
+msgid "A multisignature dash wallet"
 msgstr "マルチシグネチャビットコインウォレット"
 
 #: public/views/preferencesGlobal.html
-msgid "About Copay"
+msgid "About Copay-Dash"
 msgstr "Copayについて"
 
 #: public/views/modals/txp-details.html
@@ -245,19 +245,19 @@ msgid "BIP32 path for address derivation"
 msgstr "階級アドレス派生のパス"
 
 #: public/views/walletHome.html
-msgid "Bitcoin address"
+msgid "Dash address"
 msgstr "ビットコインアドレス"
 
 #: public/views/preferencesGlobal.html
-msgid "Bitcoin Network Fee Policy"
+msgid "Dash Network Fee Policy"
 msgstr "ビットコインネットワークの手数料設定"
 
 #: public/views/preferencesFee.html
-msgid "Bitcoin transactions may include a fee collected by miners on the network. The higher the fee, the greater the incentive a miner has to include that transaction in a block. Current fees are determined based on network load and the selected policy."
+msgid "Dash transactions may include a fee collected by miners on the network. The higher the fee, the greater the incentive a miner has to include that transaction in a block. Current fees are determined based on network load and the selected policy."
 msgstr "円滑な送金をしていただくために、ビットコインの送金には少量の手数料を付けることが義務付けられております。この手数料はビットコインのネットワークを運用する人たちに寄付され、より高い手数料であればより優先的にブロックに含まれ、承認されます。選択された手数料基準やネットワークの混雑状況により、その時点で払われるべき手数料が変動することがあります。"
 
 #: public/views/paymentUri.html
-msgid "Bitcoin URI is NOT valid!"
+msgid "Dash URI is NOT valid!"
 msgstr "Bitcoin URI が無効です！"
 
 #: public/views/modals/txp-details.html
@@ -488,7 +488,7 @@ msgid "Could not join wallet"
 msgstr "ウォレットに参加できませんでした。"
 
 #: src/js/controllers/walletHome.js
-msgid "Could not recognize a valid Bitcoin QR Code"
+msgid "Could not recognize a valid Dash QR Code"
 msgstr "有効なビットコインQRコードが認識できませんでした。"
 
 #: src/js/controllers/modals/txpDetails.js
@@ -1013,7 +1013,7 @@ msgid "Multiple recipients"
 msgstr "複数送金先"
 
 #: public/views/walletHome.html
-msgid "My Bitcoin address"
+msgid "My Dash address"
 msgstr "私のビットコインアドレス："
 
 #: public/views/modals/addressbook.html
@@ -1469,7 +1469,7 @@ msgid "Send addresses by email"
 msgstr "ビットコインアドレスをメールにて共有"
 
 #: public/views/includes/confirm-tx.html
-msgid "Send bitcoin"
+msgid "Send dash"
 msgstr "ビットコインを送金"
 
 #: public/views/export.html
@@ -1699,7 +1699,7 @@ msgid "There are no wallets to make this payment"
 msgstr "送金可能なウォレットがありません"
 
 #: src/js/controllers/index.js
-msgid "There is a new version of Copay. Please update"
+msgid "There is a new version of Copay-Dash. Please update"
 msgstr "Copay の新しいバージョンがあります。更新してください。"
 
 #: src/js/controllers/import.js
@@ -1844,7 +1844,7 @@ msgid "Wallet already exists"
 msgstr "既存のウォレットです"
 
 #: src/js/services/profileService.js
-msgid "Wallet already in Copay"
+msgid "Wallet already in Copay-Dash"
 msgstr "Copay内の既存のウォレットです"
 
 #: public/views/preferencesInformation.html
@@ -1974,7 +1974,7 @@ msgid "We reserve the right to modify this disclaimer from time to time."
 msgstr "下記に英語の規約がありますので、英語が理解できる方は是非熟読して下さい。"
 
 #: public/views/disclaimer.html
-msgid "WELCOME TO COPAY"
+msgid "WELCOME TO COPAY-DASH"
 msgstr "ようこそ COPAY へ"
 
 #: public/views/includes/terms.html

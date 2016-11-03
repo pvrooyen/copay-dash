@@ -41,7 +41,7 @@ angular.module('copayApp.controllers').controller('walletHomeController', functi
     var form = $scope.sendForm;
     if (form.address.$invalid && !ongoingProcess.get('fetchingPayPro')) {
       self.resetForm();
-      self.error = gettext('Could not recognize a valid Bitcoin QR Code');
+      self.error = gettext('Could not recognize a valid Dash QR Code');
     }
   });
 
@@ -908,7 +908,7 @@ angular.module('copayApp.controllers').controller('walletHomeController', functi
             return;
           }
 
-          var msg = gettextCatalog.getString("{{fee}} will be deducted for bitcoin networking fees", {
+          var msg = gettextCatalog.getString("{{fee}} will be deducted for dash networking fees", {
             fee: profileService.formatAmount(resp.fee) + ' ' + self.unitName
           });
 

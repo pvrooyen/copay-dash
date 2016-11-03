@@ -1,5 +1,5 @@
 var bwcModule = angular.module('bwcModule', []);
-var Client = require('../node_modules/bitcore-wallet-client');
+var Client = require('../node_modules/bitcore-wallet-client-dash');
 
 bwcModule.constant('MODULE_VERSION', '1.0.0');
 
@@ -34,7 +34,7 @@ bwcModule.provider("bwcService", function() {
 
       //note opts use `bwsurl` all lowercase;
       var bwc = new Client({
-        baseUrl: opts.bwsurl || 'https://bws.bitpay.com/bws/api',
+        baseUrl: opts.bwsurl || 'https://dev-test.dash.org:3232/bws/api',
         verbose: opts.verbose,
         transports: ['polling'],
       });

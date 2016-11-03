@@ -22,7 +22,7 @@ var RateService = function(opts) {
   self.UNAVAILABLE_ERROR = 'Service is not available - check for service.isAvailable() or use service.whenAvailable()';
   self.UNSUPPORTED_CURRENCY_ERROR = 'Currency not supported';
 
-  self._url = opts.url || 'https://insight.bitpay.com:443/api/rates';
+  self._url = opts.url || 'https://bitpay.com/api/rates';
 
   self._isAvailable = false;
   self._rates = {};
@@ -47,32 +47,48 @@ RateService.prototype._fetchCurrencies = function() {
   var backoffSeconds = 5;
   var updateFrequencySeconds = 5 * 60;
   var rateServiceUrl = 'https://bitpay.com/api/rates';
+  var exchangeRateUrl = 'https://dev-test.dash.org:3001/insight-api-dash/currency';
 
   var retrieve = function() {
+
     //log.info('Fetching exchange rates');
     self.httprequest.get(rateServiceUrl).success(function(res) {
-      self.lodash.each(res, function(currency) {
-        self._rates[currency.code] = currency.rate;
-        self._alternatives.push({
-          name: currency.name,
-          isoCode: currency.code,
-          rate: currency.rate
+
+      self.httprequest.get(exchangeRateUrl)
+        .success(function(body) {
+          var btc_dash = parseFloat(body.data.btc_dash); // provided by DashCentral / Insight API
+
+          self.lodash.each(res, function(currency) {
+            self._rates[currency.code] = (currency.rate * btc_dash);
+            self._alternatives.push({
+              name: currency.name,
+              isoCode: currency.code,
+              rate: (currency.rate * btc_dash)
+            });
+          });
+          self._isAvailable = true;
+          self.lodash.each(self._queued, function(callback) {
+            setTimeout(callback, 1);
+          });
+          setTimeout(retrieve, updateFrequencySeconds * 1000);
+
+        })
+        .error(function(err) {
+          //log.debug('Error fetching exchange rates from BitPay', err);
+          setTimeout(function() {
+            backoffSeconds *= 1.5;
+            retrieve();
+          }, backoffSeconds * 1000);
+          return;
         });
-      });
-      self._isAvailable = true;
-      self.lodash.each(self._queued, function(callback) {
-        setTimeout(callback, 1);
-      });
-      setTimeout(retrieve, updateFrequencySeconds * 1000);
     }).error(function(err) {
-      //log.debug('Error fetching exchange rates', err);
+      //log.debug('Error fetching exchange rates from DashCentral', err);
       setTimeout(function() {
         backoffSeconds *= 1.5;
         retrieve();
       }, backoffSeconds * 1000);
       return;
     });
-
   };
 
   retrieve();

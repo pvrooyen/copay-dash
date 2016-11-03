@@ -28,7 +28,7 @@ msgid "[Balance Hidden]"
 msgstr "[Fondi Nascosti]"
 
 #: src/js/controllers/walletHome.js
-msgid "{{fee}} will be deducted for bitcoin networking fees"
+msgid "{{fee}} will be deducted for dash networking fees"
 msgstr "{{fee}} verranno detratti come commissione del network"
 
 #: public/views/includes/confirm-tx.html
@@ -57,7 +57,7 @@ msgid "* A payment proposal can be deleted if 1) you are the creator, and no oth
 msgstr "* Una proposta di pagamento può essere eliminata se 1) Tu sei il creatore e nessun altro copayer ha firmato, oppure 2) Sono passate 24 ore da quando la proposta e' stata creata."
 
 #: public/views/includes/terms.html
-msgid "<b>IF YOU LOSE ACCESS TO YOUR COPAY WALLET OR YOUR ENCRYPTED PRIVATE KEYS AND YOU HAVE NOT SEPARATELY STORED A BACKUP OF YOUR WALLET AND CORRESPONDING PASSWORD, YOU ACKNOWLEDGE AND AGREE THAT ANY BITCOIN YOU HAVE ASSOCIATED WITH THAT COPAY WALLET WILL BECOME INACCESSIBLE.</b>"
+msgid "<b>IF YOU LOSE ACCESS TO YOUR COPAY-DASH WALLET OR YOUR ENCRYPTED PRIVATE KEYS AND YOU HAVE NOT SEPARATELY STORED A BACKUP OF YOUR WALLET AND CORRESPONDING PASSWORD, YOU ACKNOWLEDGE AND AGREE THAT ANY DASH YOU HAVE ASSOCIATED WITH THAT COPAY-DASH WALLET WILL BECOME INACCESSIBLE.</b>"
 msgstr "<b>Se perdi l'accesso al tuo portafoglio COPAY o tuo crittografato chiavi PRIVATE e non hai archiviato separatamente una copia di BACKUP del vostro portafoglio e la corrispondente PASSWORD, tu riconosci e accetti che qualsiasi BITCOIN associato con quel portafoglio COPAY diventerà inaccessibile.</b>"
 
 #: public/views/backup.html
@@ -73,11 +73,11 @@ msgid "<b>OR</b> the wallet recovery phrases of <b>all</b> copayers in the walle
 msgstr "<b>O</b> le frasi di recupero di portafoglio di <b>tutti</b> i copayers nel portafoglio"
 
 #: public/views/disclaimer.html
-msgid "A multisignature bitcoin wallet"
+msgid "A multisignature dash wallet"
 msgstr "Un portafoglio bitcoin multifirma"
 
 #: public/views/preferencesGlobal.html
-msgid "About Copay"
+msgid "About Copay-Dash"
 msgstr "Circa Copay"
 
 #: public/views/modals/txp-details.html
@@ -244,19 +244,19 @@ msgid "BIP32 path for address derivation"
 msgstr "Percorso BIP32 per generare l'indirizzo"
 
 #: public/views/walletHome.html
-msgid "Bitcoin address"
+msgid "Dash address"
 msgstr "Indirizzo Bitcoin"
 
 #: public/views/preferencesGlobal.html
-msgid "Bitcoin Network Fee Policy"
+msgid "Dash Network Fee Policy"
 msgstr "Criterio delle Commissioni del Bitcoin Network"
 
 #: public/views/preferencesFee.html
-msgid "Bitcoin transactions may include a fee collected by miners on the network. The higher the fee, the greater the incentive a miner has to include that transaction in a block. Current fees are determined based on network load and the selected policy."
+msgid "Dash transactions may include a fee collected by miners on the network. The higher the fee, the greater the incentive a miner has to include that transaction in a block. Current fees are determined based on network load and the selected policy."
 msgstr "Le transazioni bitcoin possono includere una tassa raccolta dai minatori della rete. Più alta è la commissione, maggiore sarà l'incentivo per un minatore a includere tale transazione in un blocco. Le commissioni attuali sono in base al carico della rete e ai criteri selezionati."
 
 #: public/views/paymentUri.html
-msgid "Bitcoin URI is NOT valid!"
+msgid "Dash URI is NOT valid!"
 msgstr "Il Bitcoin URI NON è valido!"
 
 #: public/views/modals/txp-details.html
@@ -487,7 +487,7 @@ msgid "Could not join wallet"
 msgstr "Impossibile partecipare al portafoglio"
 
 #: src/js/controllers/walletHome.js
-msgid "Could not recognize a valid Bitcoin QR Code"
+msgid "Could not recognize a valid Dash QR Code"
 msgstr "Impossibile riconoscere un Codice QR Bitcoin valido"
 
 #: src/js/controllers/modals/txpDetails.js
@@ -1012,7 +1012,7 @@ msgid "Multiple recipients"
 msgstr "Più destinatari"
 
 #: public/views/walletHome.html
-msgid "My Bitcoin address"
+msgid "My Dash address"
 msgstr "Il mio indirizzo Bitcoin"
 
 #: public/views/modals/addressbook.html
@@ -1467,7 +1467,7 @@ msgid "Send addresses by email"
 msgstr "Invia indirizzi via Email"
 
 #: public/views/includes/confirm-tx.html
-msgid "Send bitcoin"
+msgid "Send dash"
 msgstr "Invia bitcoin"
 
 #: public/views/export.html
@@ -1633,7 +1633,7 @@ msgid "Terms of Use"
 msgstr "Termini di Utilizzo"
 
 #: public/views/includes/terms.html
-msgid "The authors of the software, employees and affiliates of Bitpay, copyright holders, and BitPay, Inc. cannot retrieve your private keys or passwords if you lose or forget them and cannot guarantee transaction confirmation as they do not have control over the Bitcoin network."
+msgid "The authors of the software, employees and affiliates of Bitpay, copyright holders, and BitPay, Inc. cannot retrieve your private keys or passwords if you lose or forget them and cannot guarantee transaction confirmation as they do not have control over the Dash network."
 msgstr "Gli autori del software, dipendenti e affiliati di Bitpay, detentori del copyright e BitPay, Inc non possono recuperare la tua password o chiave privata se si perde o si dimentica e non può garantire la conferma della transazione poiché non hanno controllo della rete Bitcoin."
 
 #: public/views/import.html
@@ -1666,7 +1666,7 @@ msgid "The request could not be understood by the server"
 msgstr "La richiesta potrebbe non essere compresa dal server"
 
 #: public/views/includes/terms.html
-msgid "The software does not constitute an account where BitPay or other third parties serve as financial intermediaries or custodians of your bitcoin."
+msgid "The software does not constitute an account where BitPay or other third parties serve as financial intermediaries or custodians of your dash."
 msgstr "Il software non costituisce un account dove BitPay o altre terze parti servono come intermediari finanziari o custodi dei tuoi bitcoin."
 
 #: public/views/includes/terms.html
@@ -1695,7 +1695,7 @@ msgid "There are no wallets to make this payment"
 msgstr "Non ci sono portafogli per effettuare questo pagamento"
 
 #: src/js/controllers/index.js
-msgid "There is a new version of Copay. Please update"
+msgid "There is a new version of Copay-Dash. Please update"
 msgstr "C'è una nuova versione di Copay. Si prega di aggiornare"
 
 #: src/js/controllers/import.js
@@ -1840,7 +1840,7 @@ msgid "Wallet already exists"
 msgstr "Il portafoglio esiste già"
 
 #: src/js/services/profileService.js
-msgid "Wallet already in Copay"
+msgid "Wallet already in Copay-Dash"
 msgstr "Portafoglio già in Copay"
 
 #: public/views/preferencesInformation.html
@@ -1970,7 +1970,7 @@ msgid "We reserve the right to modify this disclaimer from time to time."
 msgstr "Ci riserviamo il diritto di modificare di volta in volta il presente disclaimer."
 
 #: public/views/disclaimer.html
-msgid "WELCOME TO COPAY"
+msgid "WELCOME TO COPAY-DASH"
 msgstr "BENVENUTO A COPAY"
 
 #: public/views/includes/terms.html

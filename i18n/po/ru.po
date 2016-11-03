@@ -73,7 +73,7 @@ msgid "<b>OR</b> the wallet recovery phrases of <b>all</b> copayers in the walle
 msgstr "<b>ИЛИ</b> ключевые словосочетания <b>всех</b> совладельцев кошелька"
 
 #: public/views/disclaimer.html
-msgid "A multisignature bitcoin wallet"
+msgid "A multisignature dash wallet"
 msgstr "Биткойн-кошелёк с мультиподписью"
 
 #: public/views/preferencesGlobal.html
