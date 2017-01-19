@@ -34,7 +34,7 @@ bwcModule.provider("bwcService", function() {
 
       //note opts use `bwsurl` all lowercase;
       var bwc = new Client({
-        baseUrl: opts.bwsurl || 'https://dev-test.dash.org:3232/bws/api',
+        baseUrl: opts.bwsurl || 'http://bws.dev.dash.org/bws/api',
         verbose: opts.verbose,
         transports: ['polling'],
       });

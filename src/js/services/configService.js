@@ -12,7 +12,7 @@ angular.module('copayApp.services').factory('configService', function(storageSer
 
     // Bitcore wallet service URL
     bws: {
-      url: 'https://dev-test.dash.org:3232/bws/api',
+      url: 'http://bws.dev.dash.org/bws/api',
     },
 
     // wallet default config

@@ -103,7 +103,7 @@ mocks.init = function(fixtures, controllerName, opts, done) {
         var bwc = new $delegate.Client();
         if (walletData)
           bwc.import(walletData, {
-            baseUrl: opts.bwsurl || 'https://dev-test.dash.org:3232/bws/api',
+            baseUrl: opts.bwsurl || 'http://bws.dev.dash.org/bws/api',
             verbose: opts.verbose,
             transports: ['polling'],
           });
