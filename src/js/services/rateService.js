@@ -47,7 +47,7 @@ RateService.prototype._fetchCurrencies = function() {
   var backoffSeconds = 5;
   var updateFrequencySeconds = 5 * 60;
   var rateServiceUrl = 'https://bitpay.com/api/rates';
-  var exchangeRateUrl = 'https://dev-test.dash.org:3001/insight-api-dash/currency';
+  var exchangeRateUrl = 'http://test-insight.dev.dash.org/insight-api-dash/currency';
 
   var retrieve = function() {
 
