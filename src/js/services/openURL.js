@@ -4,8 +4,8 @@ angular.module('copayApp.services').factory('openURLService', function($rootScop
   var root = {};
 
   root.registeredUriHandlers = [{
-    name: 'Bitcoin BIP21 URL',
-    startsWith: 'bitcoin:',
+    name: 'Dash BIP21 URL',
+    startsWith: 'dash:',
     transitionTo: 'uripayment',
   }, {
     name: 'Glidera Authentication Callback',
@@ -95,10 +95,10 @@ angular.module('copayApp.services').factory('openURLService', function($rootScop
 
       // This event is sent to an existent instance of Copay (only for standalone apps)
       gui.App.on('open', function(pathData) {
-        if (pathData.indexOf('bitcoin:') != -1) {
-          $log.debug('Bitcoin URL found');
+        if (pathData.indexOf('dash:') != -1) {
+          $log.debug('Dash URL found');
           handleOpenURL({
-            url: pathData.substring(pathData.indexOf('bitcoin:'))
+            url: pathData.substring(pathData.indexOf('dash:'))
           });
         } else if (pathData.indexOf('copay:') != -1) {
           $log.debug('Copay URL found');
