@@ -23,7 +23,7 @@
   <div class="row m20t">
     <div class="text-gray size-12 text-center" ng-repeat="fee in feeLevels.livenet" ng-if="fee.level == currentFeeLevel">
       <div ng-show="fee.nbBlocks">
-        <span class="text-bold" translate>Average confirmation time: {{fee.nbBlocks * 10}} minutes</span>.
+        <span class="text-bold" translate>Average confirmation time: {{fee.nbBlocks * 2.5}} minutes</span>.
       </div>
       <span class="text-bold" translate>Current fee rate for this policy: {{fee.feePerKBUnit}}/kiB</span>
     </div>
