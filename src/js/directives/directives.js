@@ -148,7 +148,7 @@ angular.module('copayApp.directives')
         var a = element.html();
         var text = attr.loading;
         element.on('click', function() {
-          element.html('<i class="size-21 fi-bitcoin-circle icon-rotate spinner"></i> ' + text + '...');
+          element.html('<i class="size-21 fi-dash-circle icon-rotate spinner"></i> ' + text + '...');
         });
         $scope.$watch('loading', function(val) {
           if (!val) {
