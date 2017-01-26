@@ -8,10 +8,10 @@ angular.module('copayApp.controllers').controller('preferencesUnitController', f
 
   $scope.unitList = [
     {
-      name: 'duffs (1,000,000 duffs = 1 Dash)',
-      shortName: 'duffs',
-      value: 1,
-      decimals: 0,
+      name: 'dots (1,000,000 dots = 1 Dash)',
+      shortName: 'dots',
+      value: 100,
+      decimals: 2,
       code: 'bit',
     },
     {
