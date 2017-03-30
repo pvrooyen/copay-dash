@@ -12,8 +12,8 @@ angular.module('copayApp.services')
     var errors = bwcService.getErrors();
     var usePushNotifications = isCordova && !isWP;
 
-    var FOREGROUND_UPDATE_PERIOD = 5;
-    var BACKGROUND_UPDATE_PERIOD = 30;
+    var FOREGROUND_UPDATE_PERIOD = 5*1000;
+    var BACKGROUND_UPDATE_PERIOD = 30*1000; //pvr: temp - slower updates to remove req/resp clutter
 
     root.profile = null;
     root.focusedClient = null;
@@ -165,7 +165,6 @@ angular.module('copayApp.services')
       if (!credentials.walletId)
         return cb('bindWallet should receive credentials JSON');
 
-
       // Create the client
       var getBWSURL = function(walletId) {
         var config = configService.getSync();
@@ -283,9 +282,9 @@ angular.module('copayApp.services')
       });
     };
 
-    var seedWallet = function(opts, cb) {
+      var seedWallet = function(opts, cb) {
       opts = opts || {};
-      var walletClient = bwcService.getClient(null, opts);
+      var walletClient = bwcService.getClient(null, opts); //pvr: empty instance
       var network = opts.networkName || 'livenet';
 
       if (opts.mnemonic) {
@@ -361,7 +360,7 @@ angular.module('copayApp.services')
             walletPrivKey: opts.walletPrivKey,
           }, function(err, secret) {
             if (err) return bwcError.cb(err, gettext('Error creating wallet'), cb);
-            return cb(null, walletClient, secret);
+            return cb(null, walletClient, secret); //pvr: return a callback!?
           });
         });
       }, 50);
@@ -382,7 +381,7 @@ angular.module('copayApp.services')
       doCreateWallet(opts, function(err, walletClient) {
         if (err) return cb(err);
 
-        p.addWallet(JSON.parse(walletClient.export()));
+        p.addWallet(JSON.parse(walletClient.export())); //pvr: fn called addWallet but checks/ads credentials!?
         return cb(null, p);
       });
     };

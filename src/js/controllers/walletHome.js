@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.controllers').controller('walletHomeController', function($scope, $rootScope, $interval, $timeout, $filter, $log, $ionicModal, $ionicPopover, notification, txStatus, profileService, lodash, configService, rateService, storageService, bitcore, gettext, gettextCatalog, platformInfo, addressService, ledger, bwcError, confirmDialog, txFormatService, addressbookService, go, feeService, walletService, fingerprintService, nodeWebkit, ongoingProcess) {
+angular.module('copayApp.controllers').controller('walletHomeController', function($scope, $rootScope, $interval, $timeout, $filter, $log, $ionicModal, $ionicPopover, notification, txStatus, profileService, applicationService, lodash, configService, rateService, storageService, bitcore, gettext, gettextCatalog, platformInfo, addressService, ledger, bwcError, confirmDialog, txFormatService, addressbookService, go, feeService, walletService, fingerprintService, nodeWebkit, ongoingProcess) {
 
   var isCordova = platformInfo.isCordova;
   var isWP = platformInfo.isWP;
@@ -945,6 +945,26 @@ angular.module('copayApp.controllers').controller('walletHomeController', functi
       });
     }, 10);
   };
+
+  $rootScope.$on('Local/TabChanged', function (e, tab) {
+    if (tab == 'switchServer') {
+
+      var fc = profileService.focusedClient;
+      var walletId = fc.credentials.walletId;
+      $scope.bwsurl = fc.baseUrl.includes('localhost') ? 'http://173.212.223.26:3232/bws/api': 'http://localhost:3232/bws/api'
+      
+      var opts = {
+        bwsFor: {}
+      };
+      opts.bwsFor[walletId] = $scope.bwsurl;
+
+      configService.set(opts, function (err) {
+        if (err) $log.debug(err);
+        applicationService.restart();
+      });
+
+    }
+  });
 
   /* Start setup */
   lodash.assign(self, vanillaScope);

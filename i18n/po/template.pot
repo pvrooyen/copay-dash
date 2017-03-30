@@ -93,6 +93,11 @@ msgstr ""
 msgid "Activity"
 msgstr ""
 
+#: public/views/walletHome.html
+#: src/js/controllers/index.js
+msgid "Switch Server"
+msgstr ""
+
 #: public/views/modals/addressbook.html
 msgid "Add a new entry"
 msgstr ""

@@ -47,6 +47,14 @@ angular.module('copayApp.controllers').controller('indexController', function($r
       true: 'icon-send-active'
     },
     'link': 'send'
+  },
+  {
+    'title': gettext('Switch Server'),
+    'icon': {
+      false: 'icon-scan size-21',
+      true: 'icon-scan size-21'
+    },
+    'link': 'switchServer'
   }];
 
   ret.addonViews = addonManager.addonViews();
@@ -143,6 +151,7 @@ angular.module('copayApp.controllers').controller('indexController', function($r
       self.requiresMultipleSignatures = fc.credentials.m > 1;
       self.isShared = fc.credentials.n > 1;
       self.walletName = fc.credentials.walletName;
+      self.bwsUrl = $scope.bwsUrl || fc.baseUrl;
       self.walletId = fc.credentials.walletId;
       self.isComplete = fc.isComplete();
       self.canSign = fc.canSign();
@@ -1411,7 +1420,7 @@ angular.module('copayApp.controllers').controller('indexController', function($r
       self.addressbook = ab;
     });
   };
-
+  
   $rootScope.$on('$stateChangeSuccess', function(ev, to, toParams, from, fromParams) {
     self.prevState = from.name || 'walletHome';
     self.tab = 'walletHome';
